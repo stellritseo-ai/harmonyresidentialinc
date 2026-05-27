@@ -3,7 +3,7 @@ import { Sparkles } from "lucide-react";
 
 export function Mission() {
   return (
-    <section className="relative overflow-hidden py-24 md:py-32">
+    <section className="relative isolate overflow-hidden py-24 md:py-32">
       <div className="absolute inset-0 -z-10 gradient-bg" />
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute left-1/4 top-10 size-72 rounded-full bg-white/15 blur-3xl animate-float-slow" />
