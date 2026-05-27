@@ -24,7 +24,7 @@ const features = [
 
 export function WhyChooseUs() {
   return (
-    <section id="why" className="relative overflow-hidden py-24 md:py-32">
+    <section id="why" className="relative overflow-hidden py-[60px]">
       <div className="pointer-events-none absolute -left-32 top-1/3 size-96 rounded-full bg-primary/10 blur-3xl" />
 
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
@@ -32,7 +32,7 @@ export function WhyChooseUs() {
           <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-primary">
             Why Choose Us
           </span>
-          <h2 className="mt-5 font-display text-3xl font-bold leading-tight text-foreground md:text-5xl">
+          <h2 className="mt-5 font-display font-bold leading-tight text-foreground text-2xl sm:text-[35px]">
             Why Families Trust{" "}
             <span className="gradient-text">Harmony Residential Care</span>
           </h2>
@@ -47,7 +47,7 @@ export function WhyChooseUs() {
             <Reveal key={stat.l} delay={i * 0.1}>
               <div className="group relative overflow-hidden rounded-3xl gradient-bg p-8 text-white shadow-soft transition-all duration-500 hover:shadow-glow">
                 <div className="pointer-events-none absolute -top-10 -right-10 size-44 rounded-full bg-white/15 blur-2xl" />
-                <p className="font-display text-6xl font-bold leading-none md:text-7xl">
+                <p className="font-display font-bold leading-none text-3xl sm:text-[40px]">
                   <Counter to={stat.n} suffix={stat.s} />
                 </p>
                 <p className="mt-3 text-sm font-medium opacity-90 md:text-base">

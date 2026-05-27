@@ -61,7 +61,7 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="relative overflow-hidden bg-gradient-to-b from-background to-white py-24 md:py-32">
+    <section id="services" className="relative overflow-hidden bg-gradient-to-b from-background to-white py-[60px]">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
 
       <div className="mx-auto max-w-7xl px-5 lg:px-8">

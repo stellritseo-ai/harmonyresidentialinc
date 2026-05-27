@@ -7,6 +7,7 @@ const links = [
   { label: "Home", href: "#home" },
   { label: "About Us", href: "#about" },
   { label: "Services", href: "#services" },
+  { label: "FAQs", href: "#faqs" },
   { label: "Careers", href: "#careers" },
   { label: "Resources", href: "#resources" },
   { label: "Contact", href: "#contact" },
@@ -36,7 +37,7 @@ export function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 lg:px-8">
         <a href="#home" className="flex items-center gap-3">
-          <img src={logo} alt="Harmony Residential Care Services Inc" className="h-10 w-auto md:h-12" />
+          <img src={logo} alt="Harmony Residential Care Services Inc" className="h-11 w-auto sm:h-13 md:h-16" />
         </a>
         <ul className="hidden items-center gap-8 lg:flex">
           {links.map((l) => (

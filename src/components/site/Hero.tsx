@@ -1,6 +1,12 @@
-import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { ShieldCheck, Sparkles, HeartHandshake } from "lucide-react";
-import hero from "@/assets/hero.jpg";
+import b1 from "@/assets/b1.jpg";
+import b2 from "@/assets/b2.jpg";
+import b3 from "@/assets/b3.jpg";
+import b4 from "@/assets/b4.jpg";
+
+const bgImages = [b1, b2, b3, b4];
 
 const badges = [
   { icon: ShieldCheck, label: "Trusted Care" },
@@ -9,19 +15,33 @@ const badges = [
 ];
 
 export function Hero() {
+  const [currentBg, setCurrentBg] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentBg((prev) => (prev + 1) % bgImages.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section id="home" className="relative isolate min-h-[100svh] overflow-hidden pt-24">
-      {/* Background image w/ slow zoom */}
-      <div className="absolute inset-0 -z-10">
-        <img
-          src={hero}
-          alt="Compassionate caregiver holding the hands of a smiling elderly woman"
-          width={1920}
-          height={1080}
-          className="h-full w-full object-cover animate-hero-zoom"
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-black/65 via-black/40 to-primary/40" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(108,203,142,0.25),transparent_60%)]" />
+      {/* Background slider with smooth crossfade and continuous slow pan/zoom */}
+      <div className="absolute inset-0 -z-10 overflow-hidden bg-black">
+        <AnimatePresence mode="popLayout">
+          <motion.img
+            key={currentBg}
+            src={bgImages[currentBg]}
+            alt="Harmony Residential Care Services Background"
+            initial={{ opacity: 0, scale: 1.15 }}
+            animate={{ opacity: 1, scale: 1.05 }}
+            exit={{ opacity: 0, scale: 1 }}
+            transition={{ duration: 2, ease: "easeInOut" }}
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+        </AnimatePresence>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/45 to-primary/35 z-10" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(108,203,142,0.25),transparent_60%)] z-10" />
       </div>
 
       {/* Floating particles */}
@@ -38,12 +58,12 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="lg:col-span-7"
         >
-          <div className="glass-dark inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/90">
+          <div className="glass-dark inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/90 mt-[50px] sm:mt-[100px]">
             <span className="inline-block size-1.5 rounded-full bg-accent animate-pulse" />
             20+ Years of Compassionate Care
           </div>
-
-          <h1 className="mt-6 max-w-3xl font-display text-4xl font-bold leading-[1.05] text-white sm:text-5xl md:text-6xl lg:text-7xl">
+ 
+          <h1 className="mt-6 max-w-3xl font-display font-bold text-white text-3xl leading-snug sm:text-[39px] sm:leading-[55px]">
             Professional Residential Care &amp; Non-Skilled Nursing{" "}
             <span className="bg-gradient-to-r from-[#9be3b3] via-[#6CCB8E] to-white bg-clip-text text-transparent">
               That Feels Like Family
@@ -88,13 +108,12 @@ export function Hero() {
             ))}
           </div>
         </motion.div>
-
-        {/* Floating stat card */}
+ 
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
-          className="lg:col-span-5"
+          className="lg:col-span-5 mt-[40px] lg:mt-[200px]"
         >
           <div className="relative mx-auto max-w-md">
             <div className="absolute -inset-1 rounded-3xl bg-gradient-to-br from-accent/40 to-primary/40 blur-xl" />

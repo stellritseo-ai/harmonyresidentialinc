@@ -12,7 +12,7 @@ const bullets = [
 
 export function About() {
   return (
-    <section id="about" className="relative overflow-hidden py-24 md:py-32">
+    <section id="about" className="relative overflow-hidden py-[60px]">
       <div className="pointer-events-none absolute -left-32 top-20 size-96 rounded-full bg-primary/10 blur-3xl" />
       <div className="pointer-events-none absolute -right-32 bottom-20 size-96 rounded-full bg-accent/20 blur-3xl" />
 

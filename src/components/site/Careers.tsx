@@ -3,7 +3,7 @@ import { HeartHandshake } from "lucide-react";
 
 export function Careers() {
   return (
-    <section id="careers" className="relative overflow-hidden py-24 md:py-32">
+    <section id="careers" className="relative overflow-hidden py-[60px]">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="relative overflow-hidden rounded-[2.5rem] border border-primary/10 bg-white p-10 shadow-soft md:p-16">
           <div className="pointer-events-none absolute -right-24 -top-24 size-96 rounded-full bg-accent/20 blur-3xl" />

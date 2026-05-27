@@ -3,7 +3,7 @@ import { Sparkles } from "lucide-react";
 
 export function Mission() {
   return (
-    <section className="relative isolate overflow-hidden py-24 md:py-32">
+    <section className="relative isolate overflow-hidden py-[60px]">
       <div className="absolute inset-0 -z-10 gradient-bg" />
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute left-1/4 top-10 size-72 rounded-full bg-white/15 blur-3xl animate-float-slow" />
@@ -18,7 +18,7 @@ export function Mission() {
             <Sparkles className="size-3.5" />
             Our Mission
           </div>
-          <h2 className="mt-6 font-display text-3xl font-bold leading-tight md:text-6xl">
+          <h2 className="mt-6 font-display font-bold leading-tight text-3xl sm:text-[47px]">
             Care that honors dignity, supports independence, and lifts quality of life.
           </h2>
           <p className="mx-auto mt-7 max-w-2xl text-base leading-relaxed text-white/85 md:text-lg">

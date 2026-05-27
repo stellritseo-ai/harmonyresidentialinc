@@ -6,7 +6,7 @@ import { toast } from "sonner";
 export function Contact() {
   const [sending, setSending] = useState(false);
   return (
-    <section id="contact" className="relative overflow-hidden py-24 md:py-32">
+    <section id="contact" className="relative overflow-hidden py-[60px]">
       <div className="pointer-events-none absolute -left-32 bottom-20 size-96 rounded-full bg-primary/10 blur-3xl" />
 
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
@@ -97,15 +97,6 @@ export function Contact() {
                     </a>
                   ))}
                 </div>
-              </div>
-
-              <div className="overflow-hidden rounded-[2rem] border border-border shadow-soft">
-                <iframe
-                  title="Map"
-                  className="h-72 w-full"
-                  loading="lazy"
-                  src="https://www.google.com/maps?q=101+Kohler+St,+Pickerington,+OH+43147&output=embed"
-                />
               </div>
             </div>
           </Reveal>

@@ -7,6 +7,7 @@ import { WhyChooseUs } from "@/components/site/WhyChooseUs";
 import { Mission } from "@/components/site/Mission";
 import { Testimonials } from "@/components/site/Testimonials";
 import { Careers } from "@/components/site/Careers";
+import { Faqs } from "@/components/site/Faqs";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 import { Toaster } from "@/components/ui/sonner";
@@ -36,6 +37,7 @@ function Index() {
         <Mission />
         <Testimonials />
         <Careers />
+        <Faqs />
         <Contact />
       </main>
       <Footer />

@@ -1,6 +1,4 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import { Star, Quote } from "lucide-react";
 import { Reveal } from "./Reveal";
 import a1 from "@/assets/avatar-1.jpg";
 import a2 from "@/assets/avatar-2.jpg";
@@ -31,94 +29,63 @@ const items = [
 ];
 
 export function Testimonials() {
-  const [i, setI] = useState(0);
-  const next = () => setI((p) => (p + 1) % items.length);
-  const prev = () => setI((p) => (p - 1 + items.length) % items.length);
-  const t = items[i];
-
   return (
-    <section className="relative overflow-hidden bg-background py-24 md:py-32">
+    <section className="relative overflow-hidden bg-background py-[60px]">
+      {/* Background blobs for premium depth */}
       <div className="pointer-events-none absolute -right-32 top-20 size-96 rounded-full bg-accent/15 blur-3xl" />
+      <div className="pointer-events-none absolute -left-32 bottom-20 size-96 rounded-full bg-primary/10 blur-3xl" />
 
-      <div className="mx-auto max-w-6xl px-5 lg:px-8">
+      <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <Reveal className="text-center">
           <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-primary">
             Testimonials
           </span>
           <h2 className="mt-5 font-display text-3xl font-bold leading-tight text-foreground md:text-5xl">
-            Stories from the families we{" "}
-            <span className="gradient-text">serve</span>
+            Stories from the families we <span className="gradient-text">serve</span>
           </h2>
         </Reveal>
 
-        <div className="relative mx-auto mt-14 max-w-3xl">
-          <div className="absolute -inset-2 rounded-[2.5rem] bg-gradient-to-br from-primary/20 to-accent/30 blur-2xl" />
-          <div className="relative glass rounded-[2rem] p-8 shadow-soft md:p-12">
-            <Quote className="size-10 text-primary/40" />
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 16 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -16 }}
-                transition={{ duration: 0.4 }}
-              >
-                <p className="mt-4 font-display text-xl leading-relaxed text-foreground md:text-2xl">
-                  “{t.quote}”
-                </p>
-                <div className="mt-8 flex items-center justify-between">
-                  <div className="flex items-center gap-4">
+        <div className="mt-16 grid gap-8 md:grid-cols-3">
+          {items.map((t, idx) => (
+            <Reveal key={t.name} delay={idx * 0.15}>
+              <div className="relative group h-full">
+                {/* Accent glow on hover */}
+                <div className="absolute -inset-1 rounded-[2rem] bg-gradient-to-br from-primary/20 to-accent/30 opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-100" />
+                
+                {/* Card body */}
+                <div className="relative flex h-full flex-col justify-between rounded-[2rem] border border-border/80 bg-white/70 p-8 shadow-soft backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:bg-white">
+                  <div>
+                    <div className="flex items-center justify-between">
+                      <Quote className="size-8 text-primary/30" />
+                      <div className="flex gap-0.5">
+                        {Array.from({ length: 5 }).map((_, k) => (
+                          <Star key={k} className="size-3.5 fill-amber-400 text-amber-400" />
+                        ))}
+                      </div>
+                    </div>
+                    <p className="mt-6 font-display text-base leading-relaxed text-foreground/90 italic">
+                      “{t.quote}”
+                    </p>
+                  </div>
+
+                  <div className="mt-8 flex items-center gap-4 border-t border-border/50 pt-6">
                     <img
                       src={t.img}
                       alt={t.name}
                       loading="lazy"
-                      className="size-14 rounded-full object-cover ring-4 ring-white shadow-soft"
+                      className="size-12 rounded-full object-cover ring-2 ring-primary/10 shadow-soft"
                     />
                     <div>
-                      <p className="font-display text-base font-bold text-foreground">
+                      <p className="font-display text-sm font-bold text-foreground">
                         {t.name}
                       </p>
-                      <p className="text-sm text-muted-foreground">{t.role}</p>
+                      <p className="text-xs text-muted-foreground">{t.role}</p>
                     </div>
                   </div>
-                  <div className="flex gap-1">
-                    {Array.from({ length: 5 }).map((_, k) => (
-                      <Star key={k} className="size-4 fill-amber-400 text-amber-400" />
-                    ))}
-                  </div>
                 </div>
-              </motion.div>
-            </AnimatePresence>
-          </div>
-
-          <div className="mt-8 flex items-center justify-center gap-3">
-            <button
-              aria-label="Previous"
-              onClick={prev}
-              className="grid size-11 place-items-center rounded-full border border-border bg-white text-foreground transition-colors hover:bg-primary hover:text-white"
-            >
-              <ChevronLeft className="size-5" />
-            </button>
-            <div className="flex gap-2">
-              {items.map((_, k) => (
-                <button
-                  key={k}
-                  aria-label={`Go to slide ${k + 1}`}
-                  onClick={() => setI(k)}
-                  className={`h-2 rounded-full transition-all ${
-                    k === i ? "w-8 gradient-bg" : "w-2 bg-muted-foreground/30"
-                  }`}
-                />
-              ))}
-            </div>
-            <button
-              aria-label="Next"
-              onClick={next}
-              className="grid size-11 place-items-center rounded-full border border-border bg-white text-foreground transition-colors hover:bg-primary hover:text-white"
-            >
-              <ChevronRight className="size-5" />
-            </button>
-          </div>
+              </div>
+            </Reveal>
+          ))}
         </div>
       </div>
     </section>
