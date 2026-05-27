@@ -81,12 +81,12 @@ export function Services() {
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s, i) => (
             <Reveal key={s.title} delay={i * 0.05}>
-              <div className="group relative h-full overflow-hidden rounded-3xl border border-border bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:shadow-glow">
+              <div className="group relative h-full overflow-hidden rounded-3xl border border-border bg-white p-7 transition-all duration-500 lg:hover:-translate-y-1 lg:hover:shadow-glow">
                 {/* gradient border */}
-                <div className="pointer-events-none absolute inset-0 -z-10 rounded-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100" style={{ background: "linear-gradient(135deg, rgba(29,122,67,0.08), rgba(108,203,142,0.12))" }} />
-                <div className="pointer-events-none absolute -top-20 -right-20 size-44 rounded-full bg-accent/20 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                <div className="pointer-events-none absolute inset-0 -z-10 rounded-3xl opacity-100 lg:opacity-0 transition-opacity duration-500 lg:group-hover:opacity-100" style={{ background: "linear-gradient(135deg, rgba(29,122,67,0.04), rgba(108,203,142,0.06))" }} />
+                <div className="pointer-events-none absolute -top-20 -right-20 size-44 rounded-full bg-accent/20 blur-3xl opacity-30 lg:opacity-0 transition-opacity duration-500 lg:group-hover:opacity-100" />
 
-                <div className="grid size-14 place-items-center rounded-2xl gradient-bg text-white shadow-soft transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3">
+                <div className="grid size-14 place-items-center rounded-2xl gradient-bg text-white shadow-soft transition-transform duration-500 lg:group-hover:scale-110 lg:group-hover:rotate-3">
                   <s.icon className="size-7" />
                 </div>
                 <h3 className="mt-6 font-display text-xl font-bold text-foreground">
@@ -95,7 +95,7 @@ export function Services() {
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                   {s.desc}
                 </p>
-                <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1">
+                <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-300 opacity-100 translate-x-0 lg:opacity-0 lg:group-hover:opacity-100 lg:group-hover:translate-x-1">
                   Learn more →
                 </div>
               </div>
