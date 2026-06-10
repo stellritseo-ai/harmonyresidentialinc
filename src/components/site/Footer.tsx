@@ -89,7 +89,7 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-white/50 sm:flex-row">
           <p>© {year} Harmony Residential Care Services Inc. All rights reserved.</p>
-          <p>Compassionate care, every day.</p>
+          <p>Design By StellR IT LLC</p>
         </div>
       </div>
     </footer>

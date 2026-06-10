@@ -55,7 +55,7 @@ export function Contact() {
                     name="message"
                     rows={5}
                     required
-                    placeholder="Tell us a little about your care needs..."
+                    placeholder="Tell us a little about your medical or care needs..."
                     className="w-full rounded-2xl border border-border bg-white/80 px-4 py-3 text-sm text-foreground outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/15"
                   />
                 </div>
@@ -77,7 +77,7 @@ export function Contact() {
                   Harmony Residential Care Services Inc
                 </h3>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  Compassionate care, when your family needs it most.
+                  Comprehensive medical and compassionate care, when your family needs it most.
                 </p>
                 <ul className="mt-6 space-y-4">
                   <InfoRow icon={MapPin} label="Address" value="101 Kohler St, Pickerington, OH 43147" />

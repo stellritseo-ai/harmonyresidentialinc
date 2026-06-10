@@ -5,24 +5,24 @@ import { Reveal } from "./Reveal";
 
 const faqs = [
   {
-    q: "What is the difference between residential care and skilled nursing?",
-    a: "Residential care focuses on assisted living, personal care, companionship, and daily activities to help individuals live safely and comfortably at home or in a group home environment. Non-skilled nursing encompasses support with medications, daily routines, and mobility without requiring medical-grade intensive procedures.",
+    q: "What is the difference between your clinical medical services and residential care?",
+    a: "Our clinical medical services include primary care, chronic disease management, in-office minor procedures, and 24/7 telehealth access provided by experienced medical professionals. Our residential care focuses on assisted living, personal care, homemaking, and daily activities to help individuals live safely and comfortably.",
   },
   {
-    q: "Are your caregivers trained and background-checked?",
-    a: "Absolutely. All Harmony caregivers undergo rigorous background screenings, reference checks, and comprehensive training to meet and exceed local and state regulations, ensuring absolute safety and peace of mind.",
+    q: "Are your medical staff and caregivers trained and background-checked?",
+    a: "Absolutely. All Harmony medical professionals and caregivers undergo rigorous background screenings, reference checks, and comprehensive training to meet and exceed local and state regulations, ensuring absolute safety and peace of mind.",
   },
   {
-    q: "How are personalized support plans developed?",
-    a: "We perform a thorough initial assessment with the individual and their family members to understand their specific needs, routines, preferences, and goals. Based on this, we build a customized support plan that is regularly reviewed.",
+    q: "How are personalized support and treatment plans developed?",
+    a: "We perform a thorough initial medical and lifestyle assessment to understand specific health histories, chronic conditions, daily routines, and personal goals. Based on this, we build a customized, comprehensive care plan that is regularly reviewed.",
   },
   {
-    q: "Do you offer 24/7 care and support?",
-    a: "Yes, we provide round-the-clock (24/7) support and supervision as needed. Whether it is full-time residential care or scheduled companionship visits, we customize the schedule to suit your family.",
+    q: "Do you offer 24/7 care and telehealth support?",
+    a: "Yes, we provide round-the-clock (24/7) Virtual Medical Access & Telehealth, alongside physical support and supervision as needed. Whether it is urgent medical advice, full-time residential care, or scheduled visits, we customize the support to suit your needs.",
   },
   {
-    q: "How can we get started with Harmony Residential Care?",
-    a: "Getting started is simple. You can call us directly at (210) 243-1357 or fill out the contact form below. We will schedule a free, no-obligation consultation to discuss your needs and how we can support you.",
+    q: "How can we get started with Harmony?",
+    a: "Getting started is simple. You can call us directly at (210) 243-1357 or fill out the contact form below. We will schedule a free, no-obligation consultation to discuss your medical and care needs and how we can support you.",
   },
 ];
 

@@ -9,9 +9,9 @@ import b4 from "@/assets/b4.jpg";
 const bgImages = [b1, b2, b3, b4];
 
 const badges = [
-  { icon: ShieldCheck, label: "Trusted Care" },
-  { icon: Sparkles, label: "Experienced Team" },
-  { icon: HeartHandshake, label: "Personalized Support" },
+  { icon: ShieldCheck, label: "Trusted Clinical Care" },
+  { icon: Sparkles, label: "Experienced Medical Team" },
+  { icon: HeartHandshake, label: "Comprehensive Support" },
 ];
 
 export function Hero() {
@@ -64,16 +64,14 @@ export function Hero() {
           </div>
  
           <h1 className="mt-6 max-w-3xl font-display font-bold text-white text-3xl leading-snug sm:text-[39px] sm:leading-[55px]">
-            Professional Residential Care &amp; Non-Skilled Nursing{" "}
+            Comprehensive Medical &amp; Residential Care{" "}
             <span className="bg-gradient-to-r from-[#9be3b3] via-[#6CCB8E] to-white bg-clip-text text-transparent">
               That Feels Like Family
             </span>
           </h1>
 
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/85 md:text-lg">
-            Providing compassionate, personalized, and dependable home care
-            services that empower individuals to live safely, comfortably, and
-            independently.
+            Providing expert primary care, 24/7 telehealth, and personalized residential support that empowers individuals to live safely and thrive.
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-4">
@@ -124,7 +122,7 @@ export function Hero() {
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-widest text-muted-foreground">Available now</p>
-                  <p className="font-display text-lg font-bold text-foreground">24/7 Family Support</p>
+                  <p className="font-display text-lg font-bold text-foreground">24/7 Medical & Family Support</p>
                 </div>
               </div>
               <div className="mt-6 grid grid-cols-3 gap-3">

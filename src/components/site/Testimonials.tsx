@@ -10,21 +10,21 @@ const items = [
     role: "Daughter of Client",
     img: a1,
     quote:
-      "Harmony has been a blessing for our family. The caregivers treat my mother with such warmth and respect — we finally feel at ease knowing she's safe and happy.",
+      "Harmony has been a blessing for our family. The medical staff treat my mother's chronic condition with expert care, and we finally feel at ease knowing she's safe and happy.",
   },
   {
     name: "Robert D.",
     role: "Client",
     img: a2,
     quote:
-      "The team is dependable, professional and genuinely kind. They've helped me keep my independence at home with dignity, every single day.",
+      "The clinical team is dependable, professional and genuinely kind. Between the 24/7 telehealth and regular check-ups, they've helped me keep my independence at home.",
   },
   {
     name: "Emily R.",
     role: "Family Member",
     img: a3,
     quote:
-      "From the first call to the daily visits, every detail is handled with care. It really does feel like family taking care of family.",
+      "From the primary care treatments to the daily homemaking visits, every detail is handled perfectly. It really does feel like a premium medical team taking care of our family.",
   },
 ];
 

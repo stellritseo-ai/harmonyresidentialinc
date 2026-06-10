@@ -3,9 +3,9 @@ import { Counter } from "./Counter";
 import {
   Award,
   HeartHandshake,
-  ClipboardList,
+  MonitorSmartphone,
   ShieldCheck,
-  Clock,
+  Syringe,
   Sparkles,
   Users,
   Stethoscope,
@@ -13,13 +13,13 @@ import {
 
 const features = [
   { icon: Award, title: "20+ Years Experience" },
-  { icon: HeartHandshake, title: "Compassionate Caregivers" },
-  { icon: ClipboardList, title: "Personalized Support Plans" },
+  { icon: Stethoscope, title: "Clinical Expertise" },
+  { icon: MonitorSmartphone, title: "24/7 Telehealth Access" },
+  { icon: Syringe, title: "In-House Testing & Procedures" },
   { icon: ShieldCheck, title: "Safe & Comfortable Care" },
-  { icon: Clock, title: "Dependable Service" },
-  { icon: Sparkles, title: "Dignity & Respect" },
+  { icon: HeartHandshake, title: "Compassionate Caregivers" },
   { icon: Users, title: "Family-Centered Approach" },
-  { icon: Stethoscope, title: "Professional & Caring Team" },
+  { icon: Sparkles, title: "Dignity & Respect" },
 ];
 
 export function WhyChooseUs() {

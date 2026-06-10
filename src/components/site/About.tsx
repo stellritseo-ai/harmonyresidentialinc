@@ -5,9 +5,9 @@ import about3 from "@/assets/about-3.jpg";
 import { CheckCircle2 } from "lucide-react";
 
 const bullets = [
-  "Dignity-centered, personalized care",
-  "Two decades of trusted experience",
-  "Compassionate, dependable team",
+  "Expert Primary & Chronic Care Management",
+  "24/7 Telehealth & Virtual Medical Access",
+  "Dignity-Centered Residential & Respite Care",
 ];
 
 export function About() {
@@ -71,17 +71,12 @@ export function About() {
           <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-primary">
             About Us
           </span>
-          <h2 className="mt-5 font-display text-3xl font-bold leading-tight text-foreground md:text-5xl">
-            Compassionate Care{" "}
-            <span className="gradient-text">Rooted in Experience</span>
+          <h2 className="mt-5 font-display font-bold leading-tight text-foreground text-[32px] md:text-[43px]">
+            Comprehensive Care{" "}
+            <span className="gradient-text">Rooted in Medical Expertise</span>
           </h2>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
-            Harmony Residential Care Services Inc has proudly provided
-            compassionate residential care and non-skilled nursing services for
-            over 20 years. We are dedicated to enhancing the quality of life for
-            individuals and families through dependable support, dignity-centered
-            care, and personalized assistance tailored to each client's unique
-            needs.
+            Harmony Residential Care Services Inc provides a seamless blend of expert clinical medical services and compassionate residential care. From primary care and chronic disease management to daily homemaking and respite support, we are dedicated to enhancing the quality of life for individuals through comprehensive, dignity-centered assistance tailored to each client's unique health and lifestyle needs.
           </p>
 
           <ul className="mt-8 space-y-3">

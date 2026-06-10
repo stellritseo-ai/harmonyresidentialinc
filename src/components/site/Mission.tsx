@@ -18,13 +18,11 @@ export function Mission() {
             <Sparkles className="size-3.5" />
             Our Mission
           </div>
-          <h2 className="mt-6 font-display font-bold leading-tight text-3xl sm:text-[47px]">
-            Care that honors dignity, supports independence, and lifts quality of life.
+          <h2 className="mt-6 font-display font-bold leading-tight text-3xl sm:text-[40px]">
+            Care that honors dignity, manages health proactively, and lifts quality of life.
           </h2>
           <p className="mx-auto mt-7 max-w-2xl text-base leading-relaxed text-white/85 md:text-lg">
-            Our mission is to provide compassionate, dependable, and
-            personalized residential care services that promote dignity,
-            independence, and quality of life for every individual we serve.
+            Our mission is to bridge the gap between exceptional clinical medical care and warm, personalized residential support, promoting dignity, independence, and the highest quality of life for every individual we serve.
           </p>
           <a
             href="#contact"
